@@ -8,3 +8,9 @@
   to = "/.netlify/functions/hello"
   status = 301
   force = false
+
+[[redirects]]
+  from = "/openwhisk"
+  to = "/.netlify/functions/openwhisk"
+  status = 301
+  force = false

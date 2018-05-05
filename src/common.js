@@ -81,19 +81,19 @@ module.exports.mobileMenu = function() {
             <a href="/" class="wsite-menu-item">About Me</a>
           </li>
           <li class="wsite-menu-item-wrap">
-            <a href="publications.html" class="wsite-menu-item">Publications</a>
+            <a href="publications" class="wsite-menu-item">Publications</a>
           </li>
           <li class="wsite-menu-item-wrap">
-            <a href="patents.html" class="wsite-menu-item">Patents</a>
+            <a href="patents" class="wsite-menu-item">Patents</a>
           </li>
           <li class="wsite-menu-item-wrap">
-            <a href="openwhisk.html" class="wsite-menu-item">OpenWhisk</a>
+            <a href="openwhisk" class="wsite-menu-item">OpenWhisk</a>
           </li>
           <li class="wsite-menu-item-wrap">
-            <a href="research.html" class="wsite-menu-item">Research</a>
+            <a href="research" class="wsite-menu-item">Research</a>
           </li>
           <li class="wsite-menu-item-wrap">
-            <a href="software-and-artifacts.html" class="wsite-menu-item">Software and Artifacts</a>
+            <a href="software-and-artifacts" class="wsite-menu-item">Software and Artifacts</a>
           </li>
         </ul>
       </div>

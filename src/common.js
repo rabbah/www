@@ -78,7 +78,7 @@ module.exports.mobileMenu = function() {
       <div id="menu">
         <ul class="wsite-menu-default">
           <li id="active" class="wsite-menu-item-wrap">
-            <a href="/" class="wsite-menu-item">About Me</a>
+            <a href="hello" class="wsite-menu-item">About Me</a>
           </li>
           <li class="wsite-menu-item-wrap">
             <a href="publications" class="wsite-menu-item">Publications</a>

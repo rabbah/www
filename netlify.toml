@@ -2,3 +2,9 @@
   publish = "site"
   functions = "functions"
   command = "cd src && npm install && cd .. && netlify-lambda build src"
+
+[[redirects]]
+  from = "/"
+  to = "/.netlify/functions/hello"
+  status = 301
+  force = false

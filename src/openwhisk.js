@@ -25,6 +25,7 @@ function assemble(mobile) {
 
 function content() {
   return `
+  <div class="content-wrapper">
     <div id="content">
       <div id="wsite-content" class="wsite-elements wsite-not-footer">
 	    <h2 class="wsite-content-title">OpenWhisk</h2>
@@ -100,7 +101,8 @@ function content() {
           </ul>
         </div>
       </div>
-    </div>`
+    </div>
+  </div>`
 }
 
 exports.handler = function(event, context, callback) {

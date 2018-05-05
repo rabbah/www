@@ -1,2 +1,4 @@
 [build]
-  base    = "functions/"
+  publish = "site"
+  functions = "functions"
+# command = "netlify-lambda build src"

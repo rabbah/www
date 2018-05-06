@@ -1,7 +1,7 @@
 [build]
   publish = "site"
   functions = "functions"
-  command = "cd src && npm install && cd .. && netlify-lambda build src"
+  command = "cd src && npm install -g netlify-lambda && npm install && cd .. && netlify-lambda build src"
 
 [[redirects]]
   from = "/"

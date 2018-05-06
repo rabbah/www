@@ -1,26 +1,12 @@
-let common = require('./common')
+let menu = require('./menu')
+let assemble = require('./assemble')
 
-function assemble(mobile) {
-  return `
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <title>Publications</title>
-      <meta property="og:title" content="Publications"/>
-      <meta property="og:description" content="Publications"/>
-      ${common.commonHeaderPrologue()}
-      ${common.mobileHeaderBody()}
-      ${common.commonHeaderEpilogue()}
-    </head>
-     
-    <body class="no-touch no-header-page wsite-menu-slideright  wsite-theme-light  wsite-page-index wsite-mobile wsite-render3d" ontouchstart="">
-    ${common.mobileBodyBanner()}
-    ${common.mobileMenu()}
-    ${content()}
-    ${common.footer(true)}
-    ${common.gtracker()}
-    </body>
-    </html>`
+exports.handler = function(event, context, callback) {
+  callback(null, {
+    statusCode: 200,
+    headers: { "content-type": "text/html" },
+    body: assemble.mobile(menu.tabs, menu.tabs.publications, content())
+  });
 }
 
 function content() {
@@ -186,12 +172,4 @@ function content() {
 
 
     </div>`
-}
-
-exports.handler = function(event, context, callback) {
-  callback(null, {
-    statusCode: 200,
-    headers: { "content-type": "text/html" },
-    body: assemble()
-  });
 }

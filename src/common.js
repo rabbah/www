@@ -71,31 +71,12 @@ module.exports.mobileBodyBanner = function() {
     </div>`
 }
 
-module.exports.mobileMenu = function() {
+module.exports.mobileMenu = function(tabs, activeTab) {
   return `
     <div id="menu-wrapper" class="wsite-menu-wrapper">
       <div id="search"></div>
       <div id="menu">
-        <ul class="wsite-menu-default">
-          <li id="active" class="wsite-menu-item-wrap">
-            <a href="hello" class="wsite-menu-item">About Me</a>
-          </li>
-          <li class="wsite-menu-item-wrap">
-            <a href="publications" class="wsite-menu-item">Publications</a>
-          </li>
-          <li class="wsite-menu-item-wrap">
-            <a href="patents" class="wsite-menu-item">Patents</a>
-          </li>
-          <li class="wsite-menu-item-wrap">
-            <a href="openwhisk" class="wsite-menu-item">OpenWhisk</a>
-          </li>
-          <li class="wsite-menu-item-wrap">
-            <a href="research" class="wsite-menu-item">Research</a>
-          </li>
-          <li class="wsite-menu-item-wrap">
-            <a href="software-and-artifacts" class="wsite-menu-item">Software and Artifacts</a>
-          </li>
-        </ul>
+        ${menu(tabs, activeTab)}
       </div>
   
       <div id="phone"></div>
@@ -111,6 +92,20 @@ module.exports.mobileMenu = function() {
         </div>
       </div>
     </div>`
+}
+
+function menu(tabs, activeTab) {
+  let html = `<ul class="wsite-menu-default">`
+
+  Object.getOwnPropertyNames(tabs).forEach(tab => {
+    let id = activeTab.label == tabs[tab].label ? 'id="active"' : ''
+    html += `<li ${id} class="wsite-menu-item-wrap">
+      <a href="${tab}" class="wsite-menu-item">${tabs[tab].label}</a>
+    </li>`
+  })
+
+  html += `</ul>`
+  return html
 }
 
 module.exports.footer = function(enable) {

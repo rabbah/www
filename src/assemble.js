@@ -1,13 +1,16 @@
 let common = require('./common')
 
-module.exports.generator = function(event) {
+module.exports.detectMobile = function(event) {
   let userAgent = ''
-  if (event.hasOwnProperty('params') && event.params.hasOwnProperty('header') && event.params.header.hasOwnProperty('User-Agent')) {
-    userAgent = event.params.header["User-Agent"]
+  if (event.hasOwnProperty('headers') && event.headers.hasOwnProperty('user-agent')) {
+    userAgent = event.headers["user-agent"]
   }
 
-  let mobile = ((userAgent.match("iPhone") || userAgent.match("Android"))) != null
-  return (t, a, c) => assemble(t, a, c, mobile)
+  return ((userAgent.match("iPhone") || userAgent.match("Android"))) != null
+}
+
+module.exports.generator = function(event) {
+  return (t, a, c) => assemble(t, a, c, module.exports.detectMobile(event))
 }
 
 function assemble(tabs, activeTab, content, mobile) {

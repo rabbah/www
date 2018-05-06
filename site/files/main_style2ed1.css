@@ -76,7 +76,7 @@
  #wsite-menus .wsite-menu li a { font-family: Tahoma, Geneva, sans-serif; padding: 9px; color: #545454; background: #e3f3ff; border: 0; border-bottom: 1px solid #b6d2e6; }
  #wsite-menus .wsite-menu li a:hover { color: #545454; background: #fdfeff; }
  #main { }
- #content { min-height: 400px; padding: 30px 0; }
+ #content { min-height: 400px; padding: 10px 0; }
  #container { width: 920px; margin: 0 auto; }
  #banner-wrap { border-bottom: 1px solid #d4d4d4; border-top: 1px solid #d4d4d4; background: #f6f6f6; min-width: 920px; }
  #banner-bot { background: url(theme/banner-bot2ed1.png?1521149617) left bottom no-repeat; padding-bottom: 14px; }

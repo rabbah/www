@@ -13,6 +13,7 @@ module.exports.commonHeaderPrologue = function() {
  
     <meta name="description" content="RODRIC RABBAH"/>
     <meta name="keywords" content="RODRIC,RABBAH,SERVERLESS,OPENWHISK,LAMBDA,IBM,RESEARCH"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">`
 }
@@ -100,7 +101,7 @@ module.exports.commonHeaderEpilogue = function({mobile}) {
 }
 
 module.exports.webBodyBanner = function() {
-  return `
+  return true ? '' : `
     <div id="banner-wrap">
       <div id="container">
         <div id="banner-bot">
@@ -110,14 +111,14 @@ module.exports.webBodyBanner = function() {
                 <!--div class="wsite-header"></div-->
                 <table class="wsite-multicol-table">
                   <tbody class="wsite-multicol-tbody">
-                  <tr class="wsite-multicol-tr">
-                    <td class="wsite-multicol-col" style="width:30%">
-                      <h2 class="wsite-content-title" style="text-align:left;"><font size="6" color="#515151">Rodric Rabbah<br /><font size="4">rodric@gmail.com or @rabbah</font></font><br /></h2>
-                    </td>
-                    <td class="wsite-multicol-col" style="padding-top:5px;">
-                      <img src="${SITE_PREFIX}/uploads/rr.png" alt="Picture" style="width:74;max-width:100%" />
-                    </td>
-                  </tr>
+                    <tr class="wsite-multicol-tr">
+                      <td class="wsite-multicol-col" style="width:30%">
+                        <h2 class="wsite-content-title" style="text-align:left;"><font size="6" color="#515151">Rodric Rabbah<br /><font size="4">rodric@gmail.com or @rabbah</font></font><br /></h2>
+                      </td>
+                      <td class="wsite-multicol-col" style="padding-top:5px;">
+                        <img src="${SITE_PREFIX}/uploads/rr.png" alt="Picture" style="width:74;max-width:100%" />
+                      </td>
+                    </tr>
                   </tbody>
                 </table>
               </div>
@@ -125,7 +126,8 @@ module.exports.webBodyBanner = function() {
           </div>
         </div>
       </div>
-    </div>`
+    </div>
+    <div style="clear:both"></div>`
 }
 
 module.exports.webMenu = function(tabs, activeTab) {
@@ -134,12 +136,16 @@ module.exports.webMenu = function(tabs, activeTab) {
       <div id="page">
         <div id="header-container">
           <table id="header">
-            <tr>
-              <td id="logo"><span class="wsite-logo">
-                  <span class="wsite-title-placeholder">&nbsp;</span><span style="display:none">
-                  <span style="display:none">Rodric Rabbah</span>
-                  </span>
-                  </span>
+            <tr class="wsite-multicol-tr">
+              <td id="logo" class="wsite-multicol-col" style="width:30%">
+                <div class="wsite-logo" style="padding-top: 18px">
+                  <span class="wsite-title" style="color: #515151;"><b>Rodric Rabbah</b></span>
+                  <br/>
+                  <span style="font-size: 18px; color: #515151;">rodric@gmail.com or @rabbah</span>
+                </div>
+              </td>
+              <td>
+                <img src="https://rabbah.io/uploads/rr.png" alt="Picture" style="width:30%" />
               </td>
               <td id="header-right">
                 <table>

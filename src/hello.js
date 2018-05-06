@@ -2,16 +2,17 @@ let menu = require('./menu')
 let assemble = require('./assemble')
 
 exports.handler = function(event, context, callback) {
+  let assembler = assemble.generator(event)
+
   callback(null, {
     statusCode: 200,
     headers: { "content-type": "text/html" },
-    body: assemble.mobile(menu.tabs, menu.tabs.hello, content())
-  });
+    body: assembler(menu.tabs, menu.tabs.hello, content())
+  })
 }
 
 function content() {
   return `
-<div class="content-wrapper">
   <div id="content">
     <div id="wsite-content" class="wsite-elements wsite-not-footer">
       <div>
@@ -149,6 +150,5 @@ function content() {
         </div>
       </div>
     </div>
-  </div>
-</div>`
+  </div>`
 }

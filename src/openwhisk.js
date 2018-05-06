@@ -2,17 +2,18 @@ let menu = require('./menu')
 let assemble = require('./assemble')
 
 exports.handler = function(event, context, callback) {
+  let assembler = assemble.generator(event)
+
   callback(null, {
     statusCode: 200,
     headers: { "content-type": "text/html" },
-    body: assemble.mobile(menu.tabs, menu.tabs.openwhisk, content())
-  });
+    body: assembler(menu.tabs, menu.tabs.openwhisk, content())
+  })
 }
 
 
 function content() {
   return `
-  <div class="content-wrapper">
     <div id="content">
       <div id="wsite-content" class="wsite-elements wsite-not-footer">
 	    <h2 class="wsite-content-title">OpenWhisk</h2>
@@ -88,6 +89,5 @@ function content() {
           </ul>
         </div>
       </div>
-    </div>
-  </div>`
+    </div>`
 }

@@ -21,7 +21,7 @@ module.exports.tabs = {
     label: "Research"
   },
   software: {
-    href: "software-and-artifacts",
+    href: "software",
     label: "Software and Artifacts"
   }
 }

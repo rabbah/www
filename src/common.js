@@ -1,10 +1,13 @@
+const DEBUG = process.env.SITE_DEBUG || false
+const SITE_PREFIX = DEBUG ? "https://rabbah.io" : ''
+
 module.exports.commonHeaderPrologue = function() {
   return `
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/favicon/site.webmanifest">
-    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="${SITE_PREFIX}/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="${SITE_PREFIX}/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="${SITE_PREFIX}/favicon/favicon-16x16.png">
+    <link rel="manifest" href="${SITE_PREFIX}/favicon/site.webmanifest">
+    <link rel="mask-icon" href="${SITE_PREFIX}/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="theme-color" content="#ffffff">
  
@@ -18,7 +21,7 @@ module.exports.webHeaderBody = function() {
   return `
     <link id="wsite-base-style" rel="stylesheet" type="text/css" href="https:////cdn2.editmysite.com/css/sites.css?buildTime=1521163380" />
     <link rel="stylesheet" type="text/css" href="https://cdn2.editmysite.com/css/old/fancybox.css?1521134113" />
-    <link rel="stylesheet" type="text/css" href="/files/main_style2ed1.css?1521149617" title="wsite-theme-css" />
+    <link rel="stylesheet" type="text/css" href="${SITE_PREFIX}/files/main_style2ed1.css?1521149617" title="wsite-theme-css" />
     <link href='https://fonts.googleapis.com/css?family=Actor&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
 
     <style type='text/css'>
@@ -73,7 +76,7 @@ module.exports.mobileHeaderBody = function() {
   return `
     <link id="wsite-base-style" rel="stylesheet" type="text/css" href="https://cdn2.editmysite.com/css/sites.css?buildTime=1521156149"/>
     <link rel="stylesheet" type="text/css" href="https://cdn2.editmysite.com/css/mobile-sites.css?buildTime=1521156149"/>
-    <link rel="stylesheet" type="text/css" href="/files/mobile/main_style.css?1521149617" title="wsite-theme-css"/>
+    <link rel="stylesheet" type="text/css" href="${SITE_PREFIX}/files/mobile/main_style.css?1521149617" title="wsite-theme-css"/>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,700,400italic,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&subset=latin,latin-ext" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,400italic,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css"/>
@@ -112,9 +115,7 @@ module.exports.webBodyBanner = function() {
                       <h2 class="wsite-content-title" style="text-align:left;"><font size="6" color="#515151">Rodric Rabbah<br /><font size="4">rodric@gmail.com or @rabbah</font></font><br /></h2>
                     </td>
                     <td class="wsite-multicol-col" style="padding-top:5px;">
-                      <a href='/uploads/rr.png' rel='lightbox' onclick='if (!lightboxLoaded) return false'>
-                        <img src="/uploads/rr.png" alt="Picture" style="width:74;max-width:100%" />
-                      </a>
+                      <img src="${SITE_PREFIX}/uploads/rr.png" alt="Picture" style="width:74;max-width:100%" />
                     </td>
                   </tr>
                   </tbody>

@@ -1,21 +1,27 @@
 module.exports.tabs = {
-  "hello": {
+  hello: {
+    href: "hello",
     label: "About Me",
     title: "Rodric Rabbah"
   },
-  "publications": {
+  publications: {
+    href: "publications",
     label: "Publications"
   },
-  "patents": {
+  patents: {
+    href: "patents",
     label: "Patents"
   },
-  "openwhisk": {
+  openwhisk: {
+    href: "openwhisk",
     label: "OpenWhisk"
   },
-  "research": {
+  research: {
+    href: "research",
     label: "Research"
   },
-  "software-and-artifacts": {
+  software: {
+    href: "software-and-artifacts",
     label: "Software and Artifacts"
   }
 }

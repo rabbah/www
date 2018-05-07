@@ -4,6 +4,42 @@
   command = "cd src && npm install -g netlify-lambda && npm install && cd .. && netlify-lambda build src"
 
 [[redirects]]
+  from = "http://rodric.io/*"
+  to = "https://rabbah.io/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://rodric.io/*"
+  to = "https://rabbah.io/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://rabbahs.com/*"
+  to = "https://rabbah.io/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://rabbahs.com/*"
+  to = "https://rabbah.io/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://rodric.rabbahs.com/*"
+  to = "https://rabbah.io/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://rodric.rabbahs.com/*"
+  to = "https://rabbah.io/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/"
   to = "/.netlify/functions/hello"
   status = 301

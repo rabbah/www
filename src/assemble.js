@@ -32,13 +32,13 @@ module.exports.generate = function(tabs, activeTab, content, mobile) {
       <meta property="og:site_name" content="Rodric Rabbah"/>
 
       ${common.commonHeaderPrologue()}
-      ${mobile ? common.mobileHeaderBody() : common.webHeaderBody()}
+      ${mobile ? common.mobileHeaderBody() : common.desktopHeaderBody()}
       ${common.commonHeaderEpilogue({mobile: true})}
     </head>
 
     <body class="${bodyClass}">
       ${mobile ? common.mobileBodyBanner() : ''}
-      ${mobile ? common.mobileMenu(tabs, activeTab) : common.webMenu(tabs, activeTab)}
+      ${mobile ? common.mobileMenu(tabs, activeTab) : common.desktopMenu(tabs, activeTab)}
 
       ${mobile ? mobileContent(content) : webContent(content)}
 

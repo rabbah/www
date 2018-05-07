@@ -3,21 +3,22 @@ let common = require('./common')
 module.exports.detectMobile = function(event) {
   if (event.hasOwnProperty('queryStringParameters') && event.queryStringParameters.hasOwnProperty('mode')) {
     let mode = event.queryStringParameters.mode.toLowerCase()
-    if (mode === 'desktop') return false
-    else if (mode === 'mobile') return true
+    if (mode === 'desktop') return { mobile: false, override: true }
+    else if (mode === 'mobile') return { mobile: true, override: true }
   }
 
   if (event.hasOwnProperty('headers') && event.headers.hasOwnProperty('user-agent')) {
     let userAgent = event.headers["user-agent"]
-    return ((userAgent.match("iPhone") || userAgent.match("Android"))) != null
+    let mobile = ((userAgent.match("iPhone") || userAgent.match("Android"))) != null
+    return { mobile: mobile, override: false }
   }
 
-  return false
+  return { mobile: false, override: false }
 }
 
-module.exports.generate = function(tabs, activeTab, content, mobile) {
+module.exports.generate = function(tabs, activeTab, content, mode) {
   let title = activeTab.title || activeTab.label
-  let bodyClass = mobile ?
+  let bodyClass = mode.mobile ?
       "no-touch no-header-page wsite-menu-slideright  wsite-theme-light  wsite-page-index wsite-mobile wsite-render3d" :
       "short-header-page  wsite-theme-light  wsite-page-software-and-artifacts"
 
@@ -32,17 +33,17 @@ module.exports.generate = function(tabs, activeTab, content, mobile) {
       <meta property="og:site_name" content="Rodric Rabbah"/>
 
       ${common.commonHeaderPrologue()}
-      ${mobile ? common.mobileHeaderBody() : common.desktopHeaderBody()}
-      ${common.commonHeaderEpilogue({mobile: true})}
+      ${mode.mobile ? common.mobileHeaderBody() : common.desktopHeaderBody()}
+      ${common.commonHeaderEpilogue({mobile: mode.mobile})}
     </head>
 
     <body class="${bodyClass}">
-      ${mobile ? common.mobileBodyBanner() : ''}
-      ${mobile ? common.mobileMenu(tabs, activeTab) : common.desktopMenu(tabs, activeTab)}
+      ${mode.mobile ? common.mobileBodyBanner() : ''}
+      ${mode.mobile ? common.mobileMenu(tabs, activeTab, mode) : common.desktopMenu(tabs, activeTab, mode)}
 
-      ${mobile ? mobileContent(content) : webContent(content)}
+      ${mode.mobile ? mobileContent(content) : webContent(content)}
 
-      ${common.footer(mobile)}
+      ${common.footer(mode.mobile)}
       ${common.gtracker()}
     </body>
     </html>`

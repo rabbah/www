@@ -127,7 +127,7 @@ module.exports.mobileBodyBanner = function() {
     </div>`
 }
 
-module.exports.desktopMenu = function(tabs, activeTab) {
+module.exports.desktopMenu = function(tabs, activeTab, mode) {
   return `
     <div id="header-wrap">
       <div id="page">
@@ -135,7 +135,7 @@ module.exports.desktopMenu = function(tabs, activeTab) {
 
           <div id="topnav" style="margin-top: 10px; background-color: #ececec">
             <div style="float:left;width:80%"><ul class="wsite-menu-default">
-              ${menu(tabs, activeTab)}
+              ${menu(tabs, activeTab, mode)}
             </ul></div>
           </div>
           <div style="float:right">
@@ -149,13 +149,13 @@ module.exports.desktopMenu = function(tabs, activeTab) {
     </div>`
 }
 
-module.exports.mobileMenu = function(tabs, activeTab) {
+module.exports.mobileMenu = function(tabs, activeTab, mode) {
   return `
     <div id="menu-wrapper" class="wsite-menu-wrapper">
       <div id="search"></div>
       <div id="menu">
         <ul class="wsite-menu-default">
-          ${menu(tabs, activeTab)}
+          ${menu(tabs, activeTab, mode)}
         </ul>
       </div>
   
@@ -174,13 +174,14 @@ module.exports.mobileMenu = function(tabs, activeTab) {
     </div>`
 }
 
-function menu(tabs, activeTab) {
+function menu(tabs, activeTab, mode) {
   let html = ''
+  let override = mode.mobile && mode.override ? '?mode=mobile' : mode.override ? '?mode=desktop' : ''
 
   Object.getOwnPropertyNames(tabs).forEach(tab => {
     let id = activeTab.label == tabs[tab].label ? 'id="active"' : ''
     html += `<li ${id} class="wsite-menu-item-wrap">
-      <a href="${tabs[tab].href}" class="wsite-menu-item">${tabs[tab].label}</a>
+      <a href="${tabs[tab].href}${override}" class="wsite-menu-item">${tabs[tab].label}</a>
     </li>`
   })
 

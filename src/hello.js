@@ -2,12 +2,12 @@ let menu = require('./menu')
 let assemble = require('./assemble')
 
 exports.handler = function(event, context, callback) {
-  let mobile = assemble.detectMobile(event)
+  let mode = assemble.detectMobile(event)
 
   callback(null, {
     statusCode: 200,
     headers: { "content-type": "text/html" },
-    body: assemble.generate(menu.tabs, menu.tabs.hello, content(mobile), mobile)
+    body: assemble.generate(menu.tabs, menu.tabs.hello, content(mode.mobile), mode)
   })
 }
 

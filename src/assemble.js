@@ -21,16 +21,18 @@ module.exports.generate = function(tabs, activeTab, content, mode) {
   let bodyClass = mode.mobile ?
       "no-touch no-header-page wsite-menu-slideright  wsite-theme-light  wsite-page-index wsite-mobile wsite-render3d" :
       "short-header-page  wsite-theme-light  wsite-page-software-and-artifacts"
+  let canonical = `https://rabbah.io/${activeTab.href}.html`
 
   return `
     <!DOCTYPE html>
     <html lang="en">
     <head>
       <title>${title}</title>
-      <meta property="og:title" content="${title}"/>
-      <meta property="og:description" content="${title}"/>
-      <meta property="og:url" content="https://rabbah.io"/>
-      <meta property="og:site_name" content="Rodric Rabbah"/>
+      <link rel="canonical" href="${canonical}" />
+      <meta property="og:title" content="${title}" />
+      <meta property="og:description" content="${title}" />
+      <meta property="og:url" content="${canonical}" />
+      <meta property="og:site_name" content="Rodric Rabbah" />
 
       ${common.commonHeaderPrologue()}
       ${mode.mobile ? common.mobileHeaderBody() : common.desktopHeaderBody()}

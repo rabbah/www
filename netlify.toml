@@ -10,6 +10,12 @@
   force = false
 
 [[redirects]]
+  from = "/hello.html"
+  to = "/.netlify/functions/hello"
+  status = 301
+  force = false
+
+[[redirects]]
   from = "/index.html"
   to = "/.netlify/functions/hello"
   status = 301
@@ -41,6 +47,12 @@
 
 [[redirects]]
   from = "/software-and-artifacts.html"
+  to = "/.netlify/functions/software"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/software.html"
   to = "/.netlify/functions/software"
   status = 301
   force = false

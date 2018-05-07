@@ -1,19 +1,21 @@
 let common = require('./common')
 
 module.exports.detectMobile = function(event) {
-  let userAgent = ''
-  if (event.hasOwnProperty('headers') && event.headers.hasOwnProperty('user-agent')) {
-    userAgent = event.headers["user-agent"]
+  if (event.hasOwnProperty('queryStringParameters') && event.queryStringParameters.hasOwnProperty('mode')) {
+    let mode = event.queryStringParameters.mode.toLowerCase()
+    if (mode === 'desktop') return false
+    else if (mode === 'mobile') return true
   }
 
-  return ((userAgent.match("iPhone") || userAgent.match("Android"))) != null
+  if (event.hasOwnProperty('headers') && event.headers.hasOwnProperty('user-agent')) {
+    let userAgent = event.headers["user-agent"]
+    return ((userAgent.match("iPhone") || userAgent.match("Android"))) != null
+  }
+
+  return false
 }
 
-module.exports.generator = function(event) {
-  return (t, a, c) => assemble(t, a, c, module.exports.detectMobile(event))
-}
-
-function assemble(tabs, activeTab, content, mobile) {
+module.exports.generate = function(tabs, activeTab, content, mobile) {
   let title = activeTab.title || activeTab.label
   let bodyClass = mobile ?
       "no-touch no-header-page wsite-menu-slideright  wsite-theme-light  wsite-page-index wsite-mobile wsite-render3d" :
@@ -35,8 +37,8 @@ function assemble(tabs, activeTab, content, mobile) {
     </head>
 
     <body class="${bodyClass}">
+      ${mobile ? common.mobileBodyBanner() : ''}
       ${mobile ? common.mobileMenu(tabs, activeTab) : common.webMenu(tabs, activeTab)}
-      ${mobile ? common.mobileBodyBanner() : common.webBodyBanner()}
 
       ${mobile ? mobileContent(content) : webContent(content)}
 

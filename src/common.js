@@ -18,7 +18,7 @@ module.exports.commonHeaderPrologue = function() {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">`
 }
 
-module.exports.webHeaderBody = function() {
+module.exports.desktopHeaderBody = function() {
   return `
     <link id="wsite-base-style" rel="stylesheet" type="text/css" href="https:////cdn2.editmysite.com/css/sites.css?buildTime=1521163380" />
     <link rel="stylesheet" type="text/css" href="https://cdn2.editmysite.com/css/old/fancybox.css?1521134113" />
@@ -100,82 +100,6 @@ module.exports.commonHeaderEpilogue = function({mobile}) {
     <script type="text/javascript" src="https://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1521156149&"></script>`
 }
 
-module.exports.webBodyBanner = function() {
-  return true ? '' : `
-    <div id="banner-wrap">
-      <div id="container">
-        <div id="banner-bot">
-          <div id="banner">
-            <div id="banner-mid">
-              <div id="banner-outer">
-                <!--div class="wsite-header"></div-->
-                <table class="wsite-multicol-table">
-                  <tbody class="wsite-multicol-tbody">
-                    <tr class="wsite-multicol-tr">
-                      <td class="wsite-multicol-col" style="width:30%">
-                        <h2 class="wsite-content-title" style="text-align:left;"><font size="6" color="#515151">Rodric Rabbah<br /><font size="4">rodric@gmail.com or @rabbah</font></font><br /></h2>
-                      </td>
-                      <td class="wsite-multicol-col" style="padding-top:5px;">
-                        <img src="${SITE_PREFIX}/uploads/rr.png" alt="Picture" style="width:74;max-width:100%" />
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div style="clear:both"></div>`
-}
-
-module.exports.webMenu = function(tabs, activeTab) {
-  return `
-    <div id="header-wrap">
-      <div id="page">
-        <div id="header-container">
-          <table id="header">
-            <tr class="wsite-multicol-tr">
-              <td id="logo" class="wsite-multicol-col" style="width:30%">
-                <div class="wsite-logo" style="padding-top: 18px">
-                  <span class="wsite-title" style="color: #515151;"><b>Rodric Rabbah</b></span>
-                  <br/>
-                  <span style="font-size: 18px; color: #515151;">rodric@gmail.com or @rabbah</span>
-                </div>
-              </td>
-              <td>
-                <img src="https://rabbah.io/uploads/rr.png" alt="Picture" style="width:30%" />
-              </td>
-              <td id="header-right">
-                <table>
-                  <tr>
-                    <td class="phone-number"><span class="wsite-text wsite-phone">
-                        CONTACT
-                        </span>
-                    </td>
-                    <td class="social">
-                      <div style="text-align:left;">
-                        <div style="height:0px;overflow:hidden"></div>
-                        <span class="wsite-social wsite-social-default"><a class='first-child wsite-social-item wsite-social-twitter' href='https://twitter.com/rabbah/' target='_blank' alt-text='Twitter'><span class='wsite-social-item-inner'></span></a><a class='wsite-social-item wsite-social-linkedin' href='https://www.linkedin.com/in/rabbah' target='_blank' alt-text='Linkedin'><span class='wsite-social-item-inner'></span></a><a class='last-child wsite-social-item wsite-social-mail' href='mailto:rodric@gmail.com' target='_blank' alt-text='Mail'><span class='wsite-social-item-inner'></span></a></span>
-                        <div style="height:0px;overflow:hidden"></div>
-                      </div>
-                    </td>
-                  </tr>
-                </table>
-                <div class="search"></div>
-              </td>
-            </tr>
-          </table>
-          <div id="topnav">
-            ${menu(tabs, activeTab)}
-            <div style="clear:both"></div>
-          </div>
-        </div>
-      </div>
-    </div>`
-}
-
 module.exports.mobileBodyBanner = function() {
   return `
     <div id="header">
@@ -203,12 +127,36 @@ module.exports.mobileBodyBanner = function() {
     </div>`
 }
 
+module.exports.desktopMenu = function(tabs, activeTab) {
+  return `
+    <div id="header-wrap">
+      <div id="page">
+        <div id="header-container">
+
+          <div id="topnav" style="margin-top: 10px; background-color: #ececec">
+            <div style="float:left;width:80%"><ul class="wsite-menu-default">
+              ${menu(tabs, activeTab)}
+            </ul></div>
+          </div>
+          <div style="float:right">
+            <a style="padding:0" class='first-child wsite-social-item wsite-social-twitter' href='https://twitter.com/rabbah/' target='_blank' alt-text='Twitter'><span class='wsite-social-item-inner'></span></a>
+            <a style="padding:0" class='wsite-social-item wsite-social-linkedin' href='https://www.linkedin.com/in/rabbah' target='_blank' alt-text='Linkedin'><span class='wsite-social-item-inner'></span></a>
+            <a style="padding:0" class='last-child wsite-social-item wsite-social-mail' href='mailto:rodric@gmail.com' target='_blank' alt-text='Mail'><span class='wsite-social-item-inner'></span></a>
+          </div>
+
+        </div>
+      </div>
+    </div>`
+}
+
 module.exports.mobileMenu = function(tabs, activeTab) {
   return `
     <div id="menu-wrapper" class="wsite-menu-wrapper">
       <div id="search"></div>
       <div id="menu">
-        ${menu(tabs, activeTab)}
+        <ul class="wsite-menu-default">
+          ${menu(tabs, activeTab)}
+        </ul>
       </div>
   
       <div id="phone"></div>
@@ -227,7 +175,7 @@ module.exports.mobileMenu = function(tabs, activeTab) {
 }
 
 function menu(tabs, activeTab) {
-  let html = `<ul class="wsite-menu-default">`
+  let html = ''
 
   Object.getOwnPropertyNames(tabs).forEach(tab => {
     let id = activeTab.label == tabs[tab].label ? 'id="active"' : ''
@@ -236,7 +184,6 @@ function menu(tabs, activeTab) {
     </li>`
   })
 
-  html += `</ul>`
   return html
 }
 
@@ -245,11 +192,7 @@ module.exports.footer = function(enable) {
     <div id="footer">
       <div class="wsite-mobile-footer">
         <div class="wsite-footer-version">
-          Version:
-          <span class="wsite-footer-version-text">Mobile
-            <span class="wsite-footer-vertical">|</span>
-            <a class="wsite-version-web" href="?view=full">Web</a>
-          </span>
+          <a class="wsite-version-web" href="?mode=desktop">request desktop site</a>
         </div>
       </div>
     </div>`

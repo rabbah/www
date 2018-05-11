@@ -37,6 +37,8 @@ module.exports.generate = function(tabs, activeTab, content, mode) {
       ${common.commonHeaderPrologue()}
       ${mode.mobile ? common.mobileHeaderBody() : common.desktopHeaderBody()}
       ${common.commonHeaderEpilogue({mobile: mode.mobile})}
+
+      ${common.gtracker()}
     </head>
 
     <body class="${bodyClass}">
@@ -46,7 +48,6 @@ module.exports.generate = function(tabs, activeTab, content, mode) {
       ${mode.mobile ? mobileContent(content) : webContent(content)}
 
       ${common.footer(mode.mobile)}
-      ${common.gtracker()}
     </body>
     </html>`
 }

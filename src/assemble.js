@@ -21,7 +21,7 @@ module.exports.generate = function(tabs, activeTab, content, mode) {
   let bodyClass = mode.mobile ?
       "no-touch no-header-page wsite-menu-slideright  wsite-theme-light  wsite-page-index wsite-mobile wsite-render3d" :
       "short-header-page  wsite-theme-light  wsite-page-software-and-artifacts"
-  let canonical = `https://rabbah.io/${activeTab.href}.html`
+  let canonical = `https://rabbah.io/${activeTab.href}`
 
   return `
     <!DOCTYPE html>

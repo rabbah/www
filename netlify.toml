@@ -42,53 +42,53 @@
 [[redirects]]
   from = "/"
   to = "/.netlify/functions/hello"
-  status = 301
-  force = false
-
-[[redirects]]
-  from = "/hello.html"
-  to = "/.netlify/functions/hello"
-  status = 301
+  status = 200
   force = false
 
 [[redirects]]
   from = "/index.html"
   to = "/.netlify/functions/hello"
-  status = 301
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/hello.html"
+  to = "/.netlify/functions/hello"
+  status = 200
   force = false
 
 [[redirects]]
   from = "/publications.html"
   to = "/.netlify/functions/publications"
-  status = 301
+  status = 200
   force = false
 
 [[redirects]]
   from = "/patents.html"
   to = "/.netlify/functions/patents"
-  status = 301
+  status = 200
   force = false
 
 [[redirects]]
   from = "/openwhisk.html"
   to = "/.netlify/functions/openwhisk"
-  status = 301
+  status = 200
   force = false
 
 [[redirects]]
   from = "/research.html"
   to = "/.netlify/functions/research"
-  status = 301
+  status = 200
   force = false
 
 [[redirects]]
   from = "/software-and-artifacts.html"
   to = "/.netlify/functions/software"
-  status = 301
+  status = 200
   force = false
 
 [[redirects]]
   from = "/software.html"
   to = "/.netlify/functions/software"
-  status = 301
+  status = 200
   force = false

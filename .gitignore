@@ -2,3 +2,4 @@ functions
 .idea
 node_modules
 *.iml
+*~

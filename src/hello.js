@@ -85,7 +85,7 @@ function content(mobile) {
 
               <td class="wsite-multicol-col" style="width:25.806451612903%; padding:0 15px;">
                 <div class="paragraph" style="text-align:left;">
-                  <strong><a href="/uploads/rabbah-cv.pdf" target="_blank">Curriculum Vitae</a></strong>
+                  <strong><a href="/cv" target="_blank">Curriculum Vitae</a></strong>
                   <br/><br/>
                   <strong>Highlights</strong>
                   <ul>

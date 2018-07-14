@@ -1,15 +1,15 @@
  ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, div.paragraph, blockquote, fieldset, input { margin: 0; padding: 0; }
  ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fieldset, input { margin: 0; padding: 0; }
  a img { border: 0; }
- a { color: #6ca9d5; text-decoration: none; }
+ a { color: #3f5eec; text-decoration: none; }
  a:hover { color: #90cbf5; }
- body { font-family: Tahoma, Geneva, sans-serif; font-size: 14px; color: #868686; margin: 0; padding: 0; background: #fafafa; }
+ body { font-family: Tahoma, Geneva, sans-serif; font-size: 14px; color: #353333; margin: 0; padding: 0; background: #fafafa; }
  h2 { font-size: 1.7em; margin: 0; padding: .3em 0; line-height: 1.2; font-family: "Actor", "Myriad Pro", Arial, Helvetica, sans-serif; }
  #content h2 { color: #90cbf5; }
  div.paragraph { font-size: 1em; line-height: 1.5; margin: 0; padding: .5em 0; }
  p { font-size: 1em; line-height: 1.5; margin: 0; padding: .5em 0; }
- #content div.paragraph { color: #868686; }
- #content p { color: #868686; }
+ #content div.paragraph { color: #353333; }
+ #content p { color: #353333; }
  #content abbr { border-bottom: 1px dotted #8f8f8f; }
  #header-wrap, #main-wrap { background: #fff; min-width: 900px; }
  blockquote { font-style:italic; border-left:4px solid #90cbf5; margin:10px 0 10px 0; padding-left:20px; line-height:1.5; color:#aaa; }
@@ -18,7 +18,7 @@
  .wsite-logo, .wsite-logo a { color: #90cbf5; margin: 0; padding: 0; text-decoration: none; }
  .wsite-logo, .wsite-logo a:hover { color: #90cbf5; }
  #logo, #logo a { font-size: 36px; color: #90cbf5; font-weight: normal; padding: 0; font-family: "Actor", Arial, Helvetica, sans-serif; }
- #header-right a { color: #6ca9d5; }
+ #header-right a { color: #3f5eec; }
  #header-right a:hover { color: #90cbf5; }
  #header { width: 100%; height: 100px; }
  #header, #header table { border-collapse: collapse; border-spacing: 0; }
@@ -28,7 +28,7 @@
  #header-right table { width: 1px; }
  #header-right table, #header-right .search, #header-right .wsite-search { clear: right; float: right; }
  #header-right td { padding: 0; }
- #header-right .phone-number .wsite-text { color: #868686; font-size: 12px; font-weight: normal; font-family: Tahoma, Geneva, sans-serif; text-decoration: none; display: block; white-space: nowrap; margin: 5px 0 5px 15px; }
+ #header-right .phone-number .wsite-text { color: #353333; font-size: 12px; font-weight: normal; font-family: Tahoma, Geneva, sans-serif; text-decoration: none; display: block; white-space: nowrap; margin: 5px 0 5px 15px; }
  #header-right .wsite-social { vertical-align: middle; margin: 2px 0 0 10px; }
  .wsite-social-item { width: 20px; height: 20px; margin: 0 0 0 3px; background-image:url(theme/social-no-border-grey2ed1.png?1521149617); }
  .wsite-social-facebook {background-position:0 0;}
@@ -101,8 +101,8 @@
  .landing-banner-inner { #position: relative; #top: -50%; }
  #bannerright { float: right; width: 366px; height: 330px; padding: 0 25px; margin-top: 15px; }
  #bannerright h2 { color: #90cbf5; font-size: 32px; padding: 0px; line-height: 32px; }
- #bannerright div.paragraph { color: #868686; font-size: 1.1em; padding: 20px 0px; line-height: 140%; margin: 0; }
- #bannerright p { color: #868686; font-size: 1.1em; padding: 20px 0px; line-height: 140%; margin: 0; }
+ #bannerright div.paragraph { color: #353333; font-size: 1.1em; padding: 20px 0px; line-height: 140%; margin: 0; }
+ #bannerright p { color: #353333; font-size: 1.1em; padding: 20px 0px; line-height: 140%; margin: 0; }
  #bannerright .wsite-button { margin: 0; }
  .splash-page #header { width: 532px; }
  .splash-page #banner { width: 527px; height: 161px; padding: 6px 4px 4px 6px; background: url(theme/banner-splash-bg2ed1.html?1521149617) no-repeat; }
@@ -117,10 +117,10 @@
  #footer h2 { font-size: 16px; margin: 0 0 2px; padding: .3em 0; line-height: 1.5; color: #414141; font-family: "Actor", "Myriad Pro", Arial, Helvetica, sans-serif; border-bottom:1px solid #ddd; }
  #footer span { vertical-align: middle; }
  .wsite-footer { margin-bottom: 15px; }
- .wsite-form-label { display: inline-block; color: #868686; font-family: Tahoma, Geneva, sans-serif; font-size: 1em; padding: 12px 0 5px 0; }
- .form-radio-container { color: #868686; font-size: 14px; font-family: Tahoma, Geneva, sans-serif; }
- .wsite-form-input, .wsite-search-element-input { font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #868686; background: #fff; border: 1px solid #dcdcdc; padding: 6px 4px 6px !important; line-height: 1; }
- .form-select { color: #868686; border: 1px solid #dcdcdc; font-size: 13px; background: #fff; font-family: Tahoma, Geneva, sans-serif; padding: 3px 4px; width: 320px; height: 27px; line-height: 27px; }
+ .wsite-form-label { display: inline-block; color: #353333; font-family: Tahoma, Geneva, sans-serif; font-size: 1em; padding: 12px 0 5px 0; }
+ .form-radio-container { color: #353333; font-size: 14px; font-family: Tahoma, Geneva, sans-serif; }
+ .wsite-form-input, .wsite-search-element-input { font-family: Tahoma, Geneva, sans-serif; font-size: 13px; color: #353333; background: #fff; border: 1px solid #dcdcdc; padding: 6px 4px 6px !important; line-height: 1; }
+ .form-select { color: #353333; border: 1px solid #dcdcdc; font-size: 13px; background: #fff; font-family: Tahoma, Geneva, sans-serif; padding: 3px 4px; width: 320px; height: 27px; line-height: 27px; }
  .wsite-form-container { margin-top:0px !important; text-align:left; }
  .wsite-footer .wsite-form-label { font-size: 1em; padding: 5px 0 2px 0; }
  .wsite-footer .form-radio-container { font-size:1em; }

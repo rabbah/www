@@ -23,5 +23,10 @@ module.exports.tabs = {
   software: {
     href: "software.html",
     label: "Software and Artifacts"
+  },
+  pintools: {
+    href: "pintools.html",
+    label: "Cache Pintools",
+    notab: true
   }
 }

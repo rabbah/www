@@ -94,6 +94,12 @@
   force = false
 
 [[redirects]]
+  from = "/pintools.html"
+  to = "/.netlify/functions/pintools"
+  status = 200
+  force = false
+
+[[redirects]]
   from = "/cv"
   to = "/uploads/rabbah-cv.pdf"
   status = 301

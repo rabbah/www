@@ -179,6 +179,7 @@ function menu(tabs, activeTab, mode) {
   let override = mode.mobile && mode.override ? '?mode=mobile' : mode.override ? '?mode=desktop' : ''
 
   Object.getOwnPropertyNames(tabs).forEach(tab => {
+    if (tabs[tab].notab === true) return;
     let id = activeTab.label == tabs[tab].label ? 'id="active"' : ''
     html += `<li ${id} class="wsite-menu-item-wrap">
       <a href="${tabs[tab].href}${override}" class="wsite-menu-item">${tabs[tab].label}</a>

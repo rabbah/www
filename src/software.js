@@ -50,7 +50,7 @@ function content() {
               <td>Benchmark suite for evaluating processor performance.</td>
             </tr>
             <tr>
-              <td style="text-align: left;"><a href="http://people.csail.mit.edu/rabbah/download/cache-pintools/">Pin iCache Tool </a></td>
+              <td style="text-align: left;"><a href="pintools.html">Pin iCache Tool </a></td>
               <th style="text-align: left;">&nbsp;</th>
               <td>Pin tool for data and instruction cache simulations.</td>
             </tr>

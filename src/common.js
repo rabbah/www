@@ -182,7 +182,7 @@ function menu(tabs, activeTab, mode) {
     if (tabs[tab].notab === true) return;
     let id = activeTab.label == tabs[tab].label ? 'id="active"' : ''
     html += `<li ${id} class="wsite-menu-item-wrap">
-      <a href="${tabs[tab].href}${override}" class="wsite-menu-item">${tabs[tab].label}</a>
+      <a href="/${tabs[tab].href}${override}" class="wsite-menu-item">${tabs[tab].label}</a>
     </li>`
   })
 

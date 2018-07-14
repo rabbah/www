@@ -17,7 +17,7 @@ function content() {
 
     <div>
       <div style="width: 100%; overflow-y: hidden;" class="wcustomhtml" align="left">
-        To use the cache tools, you first need to <a href="https://software.intel.com/en-us/articles/pin-a-binary-instrumentation-tool-downloads">obtain and install Pin</a>. Then <a href="uploads/cache-pintools.tgz">download</a> and install the cache tool as shown below.<br>
+        To use the cache tools, you first need to <a href="https://software.intel.com/en-us/articles/pin-a-binary-instrumentation-tool-downloads">obtain and install Pin</a>. Then <a href="/uploads/cache-pintools.tgz">download</a> and install the cache tool as shown below.<br>
          <br>
          <div class="paragraph"><strong>Download and Installation</strong><br>
            The following commands unpack the tarball, and compile the cache simulation

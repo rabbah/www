@@ -79,7 +79,7 @@ function content() {
       <br><span>Amir Hormati, Yoonseo Choi, Manjunath Kudlur, Rodric Rabbah, Trevor Mudge, and Scott Mahlke.<br>In proceedings of the In- ternational Conference on Parallel Architectures and Compilation Techniques (PACT), Raleigh, NC, September 2009. </span>
       <br>
       <br><a href="http://researcher.ibm.com/files/us-bacon/Hagiescu09Computing.pdf" target="_blank">A Computing Origami: Folding Streams in FPGAs</a>
-      <br><span>Andrei Hagiescu, Weng-Fai Wong, David Bacon, and Rodric Rabbah.<br>In proceedings of the 46th Design Automation Conference (DAC), San Fransisco, CA, July 2009. </span>
+      <br><span>Andrei Hagiescu, Weng-Fai Wong, David Bacon, and Rodric Rabbah.<br>In proceedings of the 46th Design Automation Conference (DAC), San Francisco, CA, July 2009. </span>
       <br>
       <br><span><a href="http://dl.acm.org/citation.cfm?id=1450105" target="_blank">Optimus: Efficient Realization of Streaming Applications on FPGAs</a><br>Amir Hormati, Manjunath Kudlur, David Bacon, Scott Mahlke, and Rodric Rabbah.<br>In proceedings of the International Conference on Compilers, Archi- tecture, and Synthesis for Embedded Systems (CASES), Atlanta, GA, October 2008. </span>
       <br>
@@ -109,7 +109,7 @@ function content() {
       <br>
       <br><span><a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=3&amp;ved=0ahUKEwio1tTX0uTYAhVLQq0KHYCvDycQFgg5MAI&amp;url=https%3A%2F%2Flink.springer.com%2Fcontent%2Fpdf%2F10.1007%2Fs10766-005-3590-6.pdf&amp;usg=AOvVaw2miKPimrUT1B19XOYUBMR3" target="_blank">Language and Compiler Design for Streaming Applications</a><br>Saman Amarasinghe, Michael Gordon, Michal Karczmarek, Jasper Lin, David Maze, Rodric Rabbah, and William Thies.<br>In International Journal of Parallel Programming (IJPP), Volume 33, Numbers 2-3, June 2005. </span>
       <br>
-      <br><span><a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.73.5114" target="_blank">A Productive Programming Environment for Stream Computing</a><br>Kimberly Kuo, Rodric Rabbah, and Saman Amarasinghe.<br>In proceedings of the Second Workshop on Productivity and Performance in High-End Computing (PPHEC), San Fransisco, CA, February 2005.</span>
+      <br><span><a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.73.5114" target="_blank">A Productive Programming Environment for Stream Computing</a><br>Kimberly Kuo, Rodric Rabbah, and Saman Amarasinghe.<br>In proceedings of the Second Workshop on Productivity and Performance in High-End Computing (PPHEC), San Francisco, CA, February 2005.</span>
       <br>
     </div>
     <div>

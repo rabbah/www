@@ -98,9 +98,9 @@ function content(mobile) {
                             href="https://dzone.com/users/1442703/travis_carlson.html"
                             target="_blank">Travis Carlson</a>.
                     </li>
-                    <li>I talked about serverless application at <a
+                    <li>I talked about serverless applications at <a
                             href="https://www-01.ibm.com/events/wwe/indexconf/indexconf18.nsf/"
-                            target="_blank">Index San Fransisco </a>in February.
+                            target="_blank">Index San Francisco </a>in February.
                     </li>
                     <li>I <a href="http://www.cs.cmu.edu/~15719/syllabus.html" target="_blank">visited
                       CMU to talk about</a> serverless computing and FaaS.

@@ -39,47 +39,48 @@ function content(mobile) {
 
               <td class="wsite-multicol-col" style="width:74.193548387097%; padding:0 15px;">
                  <div class="paragraph">
-                   I am one of the creators and the lead technical contributor
-                   to <a href="http://openwhisk.org">Apache OpenWhisk</a>, an event based computing
-                   model for the cloud. I was a founder of this effort&nbsp;<a
+                   I am one of the creators and the lead technical contributor to <a href="http://openwhisk.org">Apache OpenWhisk</a>, an advanced and production-ready serverless computing platform. OpenWhisk is <a href="https://github.com/openwhisk/openwhisk">open source</a>, and offered as a hosted service from <a href="https://ibm.biz/openwhisk">IBM</a> and <a href="https://www.adobe.io/apis/cloudplatform/runtime.html">Adobe</a>, and also available for private deployments from vendors that include <a href="https://developers.redhat.com/blog/2018/05/16/summit-faas-openwhisk-openshift/">Red Hat</a>, and most recently <a href="https://wso2.com/solutions/serverless/">WSO2</a>. It is also deployed on-prem in several organization worldwide.<br/>
+                   <br/>
+                   Since leaving IBM Researcher earlier this year, I have dedicated my time toward a new venture that builds on the advances in serverless computing, many of which I helped to shape at IBM. While I'm not ready to talk about my startup just yet, I am excited by what my co-founder and I are creating.<br/>
+                   <br/>
+                   <b>My work at IBM:</b> I was a founder of the OpenWhisk effort&nbsp;<a
                          href="https://researcher.watson.ibm.com/researcher/view_group_subpage.php?id=9368">at
-                   IBM Research</a> and contributed significantly to the design and
-                   implementation of the core architecture, tooling and runtimes. You can find the
-                   source code on <a href="https://github.com/openwhisk/openwhisk">GitHub</a>.
-                   OpenWhisk is <em>the</em> open source platform for research and innovation in
-                   serverless computing, which is also known as Functions-as-a-Service. It is
-                   production-ready and available as a service via <a
-                         href="https://ibm.biz/openwhisk">IBM Cloud Functions</a> and <a
-                         href="https://www.adobe.io/apis/cloudplatform/runtime.html">Adobe as I/O
-                   runtime</a>. It is also integrated with Red Hat's <span>OpenShift</span> and
-                   deployed on-prem in several organization worldwide.<br/><br/>I am currently
-                   pursuing a broader agenda around programming models and tooling for serverless
-                   computing. This is reflected in <a
+                   IBM Research</a> and lead the design and
+                   implementation of its core architecture, tooling and runtimes. My group also operated the earliest internal offering of serverless within IBM, and our work was the genesis for IBM Cloud Functions.
+                   I worked directly with several of IBM's clients to help them become cloud-native and succeed in their adoption of serverless computing.<br/><br/>
+                   As the OpenWhisk project and the IBM Cloud Functions product matured, I steered my research group at IBM toward
+                   a broader agenda that encompassed  programming models and tooling for serverless
+                   computing. This culminated in the <a
                          href="https://ibm.biz/serverless-composition">Composer</a> and the <a
                          href="https://ibm.biz/serverless-shell">Cloud Shell</a>, which we are
-                   now <a href="https://www.npmjs.com/package/@ibm-functions/shell">available</a>
+                   <a href="https://www.npmjs.com/package/@ibm-functions/shell">available</a>
                    as technology previews from <a href="https://ibm.biz/serverless-research">IBM
                    Research</a>. Composer and Shell enable many classes of applications in IoT,
                    workflow orchestration, chatbots, and HPC to take advantage of the promises
                    offered by serverless computing: no infrastructure to maintain, elastic scaling
-                   on demand, pay for what you use and not idle time.<br/><br/>Before OpenWhisk, I
+                   on demand, pay for what you use and not idle time.<br/>
+                   <br/>Before OpenWhisk, I
                    spent several years leading the <a href="https://lime.mybluemix.net/">Liquid
                    Metal</a> project, which I also helped start. It was a research effort that
                    produced a language, compiler, and runtime for high level synthesis of
                    reconfigurable hardware. My other contributions at IBM include <a
                          href="https://www.ibm.com/support/knowledgecenter/SSCRJU_4.1.0/com.ibm.streams.welcome.doc/doc/excel_overview.html">computing
                    with spreadsheets</a>, and the <a href="https://researcher.ibm.com">content
-                   management system for all IBM Researchers</a>.<br/><br/>Prior to joining
+                   management system for all IBM Researchers</a>.<br/>
+                   <br/>
+                   <b>My work at MIT:</b> Prior to joining
                    IBM, I spent several years as a research scientist at MIT where I contributed to
                    <a href="http://groups.csail.mit.edu/cag/streamit/">StreamIt</a>, a language,
                    compiler and runtime for stream programming. I later developed and co-taught a
                    multicore programming <a
                          href="http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-189-multicore-programming-primer-january-iap-2007/">primer</a>
-                   as MIT OpenCourseWare.<br/><br/>As an undergraduate, and later in graduate
-                   school, I made several contributions and supported <a
+                   as MIT OpenCourseWare.<br/>
+                   <br/>
+                   <b>Open-Source beginnings:</b> My contributions to open source date back to my undergraduate days, and later in graduate
+                   school. I made several contributions and supported <a
                          href="http://www.trimaran.org">Trimaran</a>, a compiler and simulator
                    for VLIW architectures. It was particularly rewarding because Trimaran was used
-                   for teaching a few compiler courses around the world.<br/>
+                   for research by many doctoral students, and used for teaching a few compiler courses around the world.<br/>
                  </div>
               </td>
 
@@ -89,6 +90,11 @@ function content(mobile) {
                   <br/><br/>
                   <strong>Highlights</strong>
                   <ul>
+                    <li>I was featured in the list of <a href="https://www.jeremydaly.com/25-serverless-peeps-you-need-to-follow">25 serverless peeps to follow</a> along with fellow serverless rockstars.</li>
+                    <li>I published <a href="https://medium.com/@rabbah">a new article</a> covering serverless security.
+                    </li>
+                    <li>I spoke about serverless at <a href="https://con.ballerina.io/">Ballerinacon</a> in San Francisco.
+                    </li>
                     <li>I recorded a podcast explaining <a
                             href="https://dzone.com/articles/key-serverless-concepts-for-developers"
                             target="_blank">some of the key Serverless concepts for
@@ -117,10 +123,10 @@ function content(mobile) {
                       or try it on <a href="https://ibm.biz/serverless-composition">GitHub</a>
                       and <a href="https://www.npmjs.com/package/@ibm-functions/shell">npm</a>.&nbsp;
                     </li>
-                    <li>Read our wo<em>rk at <a
-                            href="https://conf.researchr.org/home/onward-2017">Onward!</a> </em>on
-                      the<em> <a href="http://doi.acm.org/10.1145/3133850.3133855"
-                                 target="_blank">Serverless Trilemma</a>.</em></li>
+                    <li>Read our work at <a
+                            href="https://conf.researchr.org/home/onward-2017">Onward!</a> on
+                      the <a href="http://doi.acm.org/10.1145/3133850.3133855"
+                                 target="_blank">Serverless Trilemma</a>.</li>
                   </ul>
                 </div>               
               </td>
@@ -132,6 +138,15 @@ function content(mobile) {
       
         <div class="paragraph" style="text-align:left;"><strong>Technical notes</strong>
           <ul>
+            <li>
+              <a href="https://medium.com/@rabbah/security-and-serverless-functions-b97618430db6"
+                 target="_blank">Security and Serverless Functions</a><br/></li>
+            <li>
+              <a href="https://medium.com/@rabbah/the-serverless-contract-44329fab10fb"
+                 target="_blank">The Serverless Contract</a><br/></li>
+            <li>
+              <a href="https://medium.com/@rabbah/a-serverless-composition-of-functions-59b6743d3835"
+                 target="_blank">A Serverless Composition of Functions</a><br/></li>
             <li>
               <a href="https://medium.com/@rabbah/performance-debugging-for-serverless-functions-using-the-ibm-cloud-shell-ceed43e07b5e"
                  target="_blank">Performance debugging for serverless functions using

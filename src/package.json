@@ -1,8 +1,0 @@
-{
-  "name": "webpage",
-  "version": "1.0.0",
-  "description": "",
-  "dependencies": {
-    "netlify-lambda": "^0.4.0"
-  }
-}

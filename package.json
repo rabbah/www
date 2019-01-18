@@ -1,0 +1,9 @@
+{
+  "name": "rabbah.io",
+  "version": "1.0.0",
+  "description": "web pages for rabbah.io",
+  "dependencies": {
+    "babel-loader": "^7.1.4",
+    "netlify-lambda": "^0.4.0"
+  }
+}

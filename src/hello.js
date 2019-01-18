@@ -39,9 +39,11 @@ function content(mobile) {
 
               <td class="wsite-multicol-col" style="width:74.193548387097%; padding:0 15px;">
                  <div class="paragraph">
-                   I am one of the creators and the lead technical contributor to <a href="http://openwhisk.org">Apache OpenWhisk</a>, an advanced and production-ready serverless computing platform. OpenWhisk is <a href="https://github.com/openwhisk/openwhisk">open source</a>, and offered as a hosted service from <a href="https://ibm.biz/openwhisk">IBM</a> and <a href="https://www.adobe.io/apis/cloudplatform/runtime.html">Adobe</a>, and also available for private deployments from vendors that include <a href="https://developers.redhat.com/blog/2018/05/16/summit-faas-openwhisk-openshift/">Red Hat</a>, and most recently <a href="https://wso2.com/solutions/serverless/">WSO2</a>. It is also deployed on-prem in several organizations worldwide.<br/>
+                   I am a co-founder and the CTO of a serverless computing company called <a href="https://nimbella.com"one>Nimbella</a>. I am also one of the creators and the lead technical contributor to <a href="http://openwhisk.org">Apache OpenWhisk</a>, an advanced and production-ready serverless computing platform. OpenWhisk is <a href="https://github.com/openwhisk/openwhisk">open source</a>, and offered as a hosted service from <a href="https://ibm.biz/openwhisk">IBM</a> and <a href="https://www.adobe.io/apis/cloudplatform/runtime.html">Adobe</a>. It is also deployed on-prem in several organizations worldwide.<br/>
                    <br/>
-                   Since leaving IBM Research earlier this year, I have dedicated my time toward a new venture that builds on the advances in serverless computing, many of which I helped to shape at IBM. While I'm not ready to talk about my startup just yet, I am excited by what my co-founder and I are creating.<br/>
+                   <b>My work at Nimbella:</b> Serverless computing (i.e., abstract distributed system at very large scale) is an area of computing that is still nascent, and lacks the abstractions, automation, and integrations that have proven necessary to accelerate the adoption of technology in new markets and application domains. Nimbella fills the technology gaps and unifies the programming experience around serverless to deliver a complete and integrated solution that works across cloud providers, including enterprise infrastructure. It is designed from the ground up to address the needs of event-based applications, long running applications, stateful workloads, and more complex use cases that use artificial intelligence and machine learning. I am excited by what our team is creating.<br/>
+                   <br/>
+                   We are actively recruiting talented and passionate builders to join us, with expertise in distributed systems, programming languages, and compilers, as well as more generic system engineering and UI/UX. I am eager to talk to a variety of candidates. My main criteria being you are kind and respectful, passionate about learning new technologies, want to make an impact, and can code.<br/>
                    <br/>
                    <b>My work at IBM:</b> I was a founder of the OpenWhisk effort&nbsp;<a
                          href="https://researcher.watson.ibm.com/researcher/view_group_subpage.php?id=9368">at
@@ -90,8 +92,10 @@ function content(mobile) {
                   <br/><br/>
                   <strong>Highlights</strong>
                   <ul>
-                    <li>I was featured in the list of <a href="https://www.jeremydaly.com/25-serverless-peeps-you-need-to-follow">25 serverless peeps to follow</a> along with fellow serverless rockstars.</li>
-                    <li>I published <a href="https://medium.com/@rabbah">a new article</a> covering serverless security.
+                    <li>Listen to <a href="https://twitter.com/saronyitbarek">Saron Yitbarek</a> and me discussing Serverless Computing in <a href="https://www.redhat.com/en/command-line-heroes/season-2/at-your-serverless">Season 2 of Command Line Heroes</a>.</li>
+                    <li>I published <a href="https://medium.com/openwhisk/the-dawn-of-the-cloud-computer-bd313e048335">The dawn of the Cloud Computer</a> with a RISC-y analogy.</li>
+                    <li>I was featured in the <a href=https://www.jeremydaly.com/serverless-peeps-you-need-to-follow/">Jeremy Daly's</a> list of serverless people to follow along with fellow serverless rockstars.</li>
+                    <li>I published <a href="https://medium.com/openwhisk/security-and-serverless-functions-b97618430db6">a new article</a> covering serverless security.
                     </li>
                     <li>I spoke about serverless at <a href="https://con.ballerina.io/">Ballerinacon</a> in San Francisco.
                     </li>
@@ -138,6 +142,9 @@ function content(mobile) {
       
         <div class="paragraph" style="text-align:left;"><strong>Technical notes</strong>
           <ul>
+            <li>
+              <a href="https://medium.com/openwhisk/the-dawn-of-the-cloud-computer-bd313e048335"
+                 target="_blank">The dawn of the Cloud Computer</a><br/></li>
             <li>
               <a href="https://medium.com/@rabbah/security-and-serverless-functions-b97618430db6"
                  target="_blank">Security and Serverless Functions</a><br/></li>

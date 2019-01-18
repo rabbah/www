@@ -3,7 +3,7 @@ let assemble = require('../src/assemble')
 
 describe('Assemble', function() {
   it('should detect desktop browser', function() {
-    let mobile = assemble.detectMobile({
+    let res = assemble.detectMobile({
       "path": "/.netlify/functions/echo",
       "httpMethod": "GET",
       "headers": {
@@ -27,11 +27,11 @@ describe('Assemble', function() {
       "body": "",
       "isBase64Encoded": true
     })
-    assert.equal(mobile, false)
+    assert.equal(res.mobile, false)
   });
 
   it('should override desktop browser with query parameter', function() {
-    let mobile = assemble.detectMobile({
+    let res = assemble.detectMobile({
       "path": "/.netlify/functions/echo",
       "httpMethod": "GET",
       "headers": {
@@ -57,11 +57,11 @@ describe('Assemble', function() {
       "body": "",
       "isBase64Encoded": true
     })
-    assert.equal(mobile, true)
+    assert.equal(res.mobile, true)
   });
 
   it('should detect mobile browser', function() {
-    let mobile = assemble.detectMobile({
+    let res = assemble.detectMobile({
       "path":"/.netlify/functions/echo",
       "httpMethod":"GET",
       "headers":{
@@ -84,11 +84,11 @@ describe('Assemble', function() {
       "body":"",
       "isBase64Encoded":true
     })
-    assert.equal(mobile, true)
+    assert.equal(res.mobile, true)
   });
 
   it('should override mobile browser with query parameter', function() {
-    let mobile = assemble.detectMobile({
+    let res = assemble.detectMobile({
       "path":"/.netlify/functions/echo",
       "httpMethod":"GET",
       "headers":{
@@ -113,6 +113,6 @@ describe('Assemble', function() {
       "body":"",
       "isBase64Encoded":true
     })
-    assert.equal(mobile, false)
+    assert.equal(res.mobile, false)
   });
 });

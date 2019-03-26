@@ -140,7 +140,7 @@ module.exports.desktopMenu = function(tabs, activeTab, mode) {
           </div>
           <div style="float:right">
             <a style="padding:0" class='first-child wsite-social-item wsite-social-twitter' href='https://twitter.com/rabbah/' target='_blank' alt-text='Twitter'><span class='wsite-social-item-inner'></span></a>
-            <a style="padding:0" class='wsite-social-item wsite-social-linkedin' href='https://www.linkedin.com/in/rabbah' target='_blank' alt-text='Linkedin'><span class='wsite-social-item-inner'></span></a>
+            <a style="padding:0" class='wsite-social-item wsite-social-linkedin' href='https://www.linkedin.com/in/rodric' target='_blank' alt-text='Linkedin'><span class='wsite-social-item-inner'></span></a>
             <a style="padding:0" class='last-child wsite-social-item wsite-social-mail' href='mailto:rodric@gmail.com' target='_blank' alt-text='Mail'><span class='wsite-social-item-inner'></span></a>
           </div>
 
@@ -165,7 +165,7 @@ module.exports.mobileMenu = function(tabs, activeTab, mode) {
           <div style="height:0px;overflow:hidden"></div>
           <span class="wsite-social wsite-social-default">
             <a class='first-child wsite-social-item wsite-social-twitter' href='https://twitter.com/rabbah/' target='_blank' alt-text='Twitter'><span class='wsite-social-item-inner'></span></a>
-            <a class='wsite-social-item wsite-social-linkedin' href='https://www.linkedin.com/in/rabbah' target='_blank' alt-text='Linkedin'><span class='wsite-social-item-inner'></span></a>
+            <a class='wsite-social-item wsite-social-linkedin' href='https://www.linkedin.com/in/rodric' target='_blank' alt-text='Linkedin'><span class='wsite-social-item-inner'></span></a>
             <a class='last-child wsite-social-item wsite-social-mail' href='mailto:rodric@gmail.com' target='_blank' alt-text='Mail'><span class='wsite-social-item-inner'></span></a>
           </span>
           <div style="height:0px;overflow:hidden"></div>

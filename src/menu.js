@@ -26,7 +26,7 @@ module.exports.tabs = {
   },
   boe: {
     href: "boe",
-    label: "Somers Board of Education"
+    label: "Somers BOE"
   },
   pintools: {
     href: "pintools.html",

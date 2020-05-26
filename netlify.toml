@@ -100,6 +100,12 @@
   force = false
 
 [[redirects]]
+  from = "/boe"
+  to = "/.netlify/functions/boe"
+  status = 200
+  force = false
+
+[[redirects]]
   from = "/cv"
   to = "/uploads/rabbah-cv.pdf"
   status = 301

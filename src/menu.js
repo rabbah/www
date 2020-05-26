@@ -28,5 +28,10 @@ module.exports.tabs = {
     href: "pintools.html",
     label: "Cache Pintools",
     notab: true
+  },
+  boe: {
+    href: "boe",
+    label: "Somers Board of Education",
+    notab: true      
   }
 }

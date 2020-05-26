@@ -22,7 +22,8 @@ module.exports.tabs = {
   },
   software: {
     href: "software.html",
-    label: "Software and Artifacts"
+    label: "Software and Artifacts",
+    notab: true
   },
   boe: {
     href: "boe",

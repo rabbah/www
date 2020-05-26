@@ -13,7 +13,13 @@ function content() {
   return `
     <div id="content">
       <div id="wsite-content" class="wsite-elements wsite-not-footer">
-        <h2 class="wsite-content-title">Rodric Rabbah, Candidate for the Somers Board of Education<br/></h2>
+
+        <div style="padding-bottom: 20px;">
+          <h2 class="wsite-content-title" style="padding: 0;">
+            Rodric Rabbah, Candidate for the Somers Board of Education
+            <img src="https://rabbah.io/uploads/r.png" alt="Portrait" style="padding: 10px 0 0 20px; width:15%;float: right;"><br/>
+          </h2>
+        </div>
 
         <div class="paragraph">
           <span style="color:#3f3f3fe8 !important;font-weight:bold">Hello Somers Parents.</span><br/><br/>

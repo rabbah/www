@@ -27,7 +27,7 @@ module.exports.tabs = {
   },
   boe: {
     href: "boe",
-    label: "Somers BOE",
+    label: "Somers Board of Education",
     title: "Rodric Rabbah, Candidate for Somers Board of Education"
   },
   pintools: {

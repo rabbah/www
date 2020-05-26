@@ -24,14 +24,13 @@ module.exports.tabs = {
     href: "software.html",
     label: "Software and Artifacts"
   },
+  boe: {
+    href: "boe",
+    label: "Somers Board of Education"
+  },
   pintools: {
     href: "pintools.html",
     label: "Cache Pintools",
     notab: true
-  },
-  boe: {
-    href: "boe",
-    label: "Somers Board of Education",
-    notab: true      
   }
 }

@@ -56,7 +56,7 @@ function content(mobile) {
 
         <div class="paragraph">
           <span style="color:#3f3f3fe8 !important;font-weight:bold">I know that establishing distance learning programs requires unique technologies and integrations, for which I can offer first-hand experience based on running my fully remote company.</span>
-          I am very familiar with the technologies being used and evaluated by the district, and I understand the pros and cons of these online tools, including their privacy implications. I also understand that distance learning for younger children is not the same as distance learning for older children. And, I believe that a comprehensive plan must include how to best support Individualized Education Programs for children with special needs.          <br/>
+          I am very familiar with the technologies being used and evaluated by the district, and I understand the pros and cons of these online tools, including their privacy implications. I also understand that distance learning for younger children is not the same as distance learning for older children. A comprehensive plan must also include how to best support Individualized Education Programs for children with special needs, and must address the social and emotional well-being of our students.<br/>
         </div>
 
         <div class="paragraph">

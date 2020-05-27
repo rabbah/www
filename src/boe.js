@@ -18,7 +18,7 @@ function content(mobile) {
         <div style="padding-bottom: 20px;">
           <h2 class="wsite-content-title" style="padding: 0;">
             ${mobile? 'Candidate for the Somers Board of Education' : 'Rodric Rabbah, Candidate for the Somers Board of Education'}
-            <img src="https://rabbah.io/uploads/r.png" alt="Portrait" style="padding: 10px 0 0 20px; width:${mobile? '25%':'19%'};float: right;"><br/>
+            <img src="https://rabbah.io/uploads/r.png" alt="Portrait" style="padding: 10px 20px 10px 20px; width:${mobile? '25%':'19%'};float: right;border-radius: 50%"><br/>
           </h2>
         </div>
 
@@ -30,7 +30,7 @@ function content(mobile) {
         </div>
 
         <div class="paragraph">
-          <span style="color:#3f3f3fe8 !important;font-weight:bold">I am Dr. Rodric Rabbah and I am running for a 3-year term on the Somers Board of Education.</span>
+          <span style="color:#3f3f3fe8 !important;font-weight:bold">I am Dr. Rodric Rabbah and I am running for a 3-year term on the Somers Board of Education.</span><br/>
           My wife, a Cancer Research Scientist at a local hospital, and I have been Somers residents since 2013. We have one child in Kindergarten and another in the third grade. Like many of you during this pandemic, we are doing our best to facilitate our children's learning by day. The pandemic is stressful and heartbreaking for many, so I am finding special comfort in cherishing this unique time with my children.<br/>
         </div>
 

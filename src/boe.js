@@ -36,7 +36,7 @@ function content(mobile) {
 
         <div class="paragraph">
           <span style="color:#3f3f3fe8 !important;font-weight:bold">I will bring a fresh perspective to the Board of Education, especially concerning STEAM education (Science, Technology, Engineering, the Arts and Mathematics).</span>
-          I hold a doctorate in Computer Science from Georgia Tech. I taught courses at the Massachusetts Institute of Technology (MIT), helping to connect students with real-world technology. One of my courses was translated and offered online by MIT to a global audience. I was a Principal Scientist at IBM Research where I spent 11 years of my career. Two years ago, I decided to leave IBM to start my own technology company.<br/>
+          I hold a doctorate in Computer Science from Georgia Tech. I was a Research Scientist and taught courses at the Massachusetts Institute of Technology (MIT), helping to connect students with real-world technology. One of my courses was translated and offered online by MIT to a global audience. I was a Principal Scientist at IBM Research where I spent 11 years of my career. Two years ago, I decided to leave IBM to start my own technology company.<br/>
         </div>
 
         <div class="paragraph">

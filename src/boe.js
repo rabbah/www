@@ -18,7 +18,7 @@ function content(mobile) {
         <div style="padding-bottom: 20px;">
           <h2 class="wsite-content-title" style="padding: 0;">
             ${mobile? 'Candidate for the Somers Board of Education' : 'Rodric Rabbah, Candidate for the Somers Board of Education'}
-            <img src="https://rabbah.io/uploads/r.png" alt="Portrait" style="padding: 10px 0 0 20px; width:${mobile? '15%':'19%'};float: right;"><br/>
+            <img src="https://rabbah.io/uploads/r.png" alt="Portrait" style="padding: 10px 0 0 20px; width:${mobile? '25%':'19%'};float: right;"><br/>
           </h2>
         </div>
 

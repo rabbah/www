@@ -2,22 +2,23 @@ let menu = require('./menu')
 let assemble = require('./assemble')
 
 exports.handler = function(event, context, callback) {
+  const mobile = assemble.detectMobile(event)
   callback(null, {
     statusCode: 200,
     headers: { "content-type": "text/html" },
-    body: assemble.generate(menu.tabs, menu.tabs.boe, content(), assemble.detectMobile(event))
+    body: assemble.generate(menu.tabs, menu.tabs.boe, content(mobile.mobile), mobile)
   })
 }
 
-function content() {
+function content(mobile) {
   return `
     <div id="content">
       <div id="wsite-content" class="wsite-elements wsite-not-footer">
 
         <div style="padding-bottom: 20px;">
           <h2 class="wsite-content-title" style="padding: 0;">
-            Rodric Rabbah, Candidate for the Somers Board of Education
-            <img src="https://rabbah.io/uploads/r.png" alt="Portrait" style="padding: 10px 0 0 20px; width:15%;float: right;"><br/>
+            ${mobile? 'Candidate for the Somers Board of Education' : 'Rodric Rabbah, Candidate for the Somers Board of Education'}
+            <img src="https://rabbah.io/uploads/r.png" alt="Portrait" style="padding: 10px 0 0 20px; width:${mobile? '15%':'19%'};float: right;"><br/>
           </h2>
         </div>
 

@@ -60,7 +60,7 @@ function content(mobile) {
           Please share this letter with your friends and family.<br/>
           <ul>
             <li><span style="color:#3f3f3fe8 !important;font-weight:bold">Your ballot must be received by 5PM on June 9:</span> the election this year will only be held by mail-in ballots.</li>
-            <li><span style="color:#3f3f3fe8 !important;font-weight:bold">To receive a paper ballot if one was not mailed to you:</span> email our District Clerk Nancy Corrado at <a href='mailto:ncorrado@somersschools.org'>ncorrado@somersschools.org</a>.</li>
+            <li><span style="color:#3f3f3fe8 !important;font-weight:bold">To receive a paper ballot if one was not mailed to you by June 2:</span> email our District Clerk Nancy Corrado at <a href='mailto:ncorrado@somersschools.org'>ncorrado@somersschools.org</a>.</li>
             <li><span style="color:#3f3f3fe8 !important;font-weight:bold">If you are not registered to vote:</span> visit <a href='https://dmv.ny.gov/more-info/electronic-voter-registration-application'> https://dmv.ny.gov/more-info/electronic-voter-registration-application</a> to register online.</li>
             <li><span style="color:#3f3f3fe8 !important;font-weight:bold">To contact me:</span> email me at <a href='mailto:rodric@gmail.com'>rodric@gmail.com</a> or call <a href='tel:+16462486456'>646-248-6456</a>.</li>
           </ul>

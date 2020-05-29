@@ -10,6 +10,12 @@
   force = true
 
 [[redirects]]
+  from = "http://www.rodric.io/*"
+  to = "https://rabbah.io/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "https://rodric.io/*"
   to = "https://rabbah.io/:splat"
   status = 301

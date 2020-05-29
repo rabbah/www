@@ -16,7 +16,8 @@ function content(mobile) {
       <div id="wsite-content" class="wsite-elements wsite-not-footer">
 
         <div style="padding-bottom:${mobile? '10px' : '20px'}">
-          <span style="font-weight:bold">Hello Somers Parents.</span>
+          ${mobile? '' : '<h2 class="wsite-content-title" style="padding-bottom: 20px;">Vote Rodric Rabbah for the Somers Board of Education</h2>'}
+          <span style="${mobile ? '' : 'color:#3f3f3fe8 !important;'}font-weight:bold">Hello Somers Parents.</span>
         </div>
 
         <div class="paragraph">

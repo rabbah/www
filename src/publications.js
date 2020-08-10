@@ -76,7 +76,7 @@ function content() {
       <br><span>Amir H Hormati, Yoonseo Choi, Mark Woh, Manju- nath Kudlur, Rodric Rabbah, Trevor Mudge, Scott Mahlke.<br>In proceedings of the Fifteenth International Symposium on Architectural Support for Programming Languages and Operating Systems (ASPLOS), Pittsburgh, PA, March 2010. </span>
       <br>
       <br><a href="http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=5260540" target="_blank"><span>Flextream: Adaptive Compilation of Streaming Applications for Heterogeneous Architectures</span></a>
-      <br><span>Amir Hormati, Yoonseo Choi, Manjunath Kudlur, Rodric Rabbah, Trevor Mudge, and Scott Mahlke.<br>In proceedings of the In- ternational Conference on Parallel Architectures and Compilation Techniques (PACT), Raleigh, NC, September 2009. </span>
+      <br><span>Amir Hormati, Yoonseo Choi, Manjunath Kudlur, Rodric Rabbah, Trevor Mudge, and Scott Mahlke.<br>In proceedings of the International Conference on Parallel Architectures and Compilation Techniques (PACT), Raleigh, NC, September 2009. </span>
       <br>
       <br><a href="http://researcher.ibm.com/files/us-bacon/Hagiescu09Computing.pdf" target="_blank">A Computing Origami: Folding Streams in FPGAs</a>
       <br><span>Andrei Hagiescu, Weng-Fai Wong, David Bacon, and Rodric Rabbah.<br>In proceedings of the 46th Design Automation Conference (DAC), San Francisco, CA, July 2009. </span>

@@ -1,7 +1,12 @@
+[[plugins]]
+  package = "netlify-plugin-nimbella"
+
+[plugins.inputs]
+  functions = "src"
+
 [build]
   publish = "site"
-  functions = "functions"
-  command = "npm install -g && netlify-lambda build src"
+  command = "#"
 
 [[redirects]]
   from = "http://rodric.io/*"

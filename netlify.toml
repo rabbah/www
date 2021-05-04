@@ -105,17 +105,18 @@
   status = 200
   force = false
 
-[[redirects]]
-  from = "/boe"
-  to = "/.netlify/functions/boe"
-  status = 200
-  force = false
+#[[redirects]]
+#  from = "/boe"
+#  to = "/.netlify/functions/boe"
+#  status = 200
+#  force = false
 
 [[redirects]]
   from = "/boe."
-  to = "/.netlify/functions/boe"
-  status = 200
-  force = false
+  to = "/boe"
+#  to = "/.netlify/functions/boe"
+#  status = 200
+#  force = false
 
 [[redirects]]
   from = "/cv"

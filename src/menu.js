@@ -25,11 +25,11 @@ module.exports.tabs = {
     label: "Software and Artifacts",
     notab: true
   },
-  boe: {
+  /*boe: {
     href: "boe",
     label: "Somers Board of Education",
     title: "Rodric Rabbah, Candidate for Somers Board of Education"
-  },
+  },*/
   pintools: {
     href: "pintools.html",
     label: "Cache Pintools",

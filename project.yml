@@ -1,0 +1,27 @@
+packages:
+  - name: default
+    actions:
+      - name: pintools
+        runtime: nodejs-lambda:14
+      - name: hello
+        runtime: nodejs-lambda:14
+      - name: research
+        runtime: nodejs-lambda:14
+      - name: boe
+        runtime: nodejs-lambda:14
+      - name: publications
+        runtime: nodejs-lambda:14
+      - name: openwhisk
+        runtime: nodejs-lambda:14
+      - name: patents
+        runtime: nodejs-lambda:14
+      - name: software
+        runtime: nodejs-lambda:14
+      - name: echo
+        runtime: nodejs-lambda:14
+      - name: common
+        runtime: nodejs-lambda:14
+      - name: menu
+        runtime: nodejs-lambda:14
+      - name: assemble
+        runtime: nodejs-lambda:14

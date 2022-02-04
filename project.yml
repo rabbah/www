@@ -19,9 +19,3 @@ packages:
         runtime: nodejs-lambda:14
       - name: echo
         runtime: nodejs-lambda:14
-      - name: common
-        runtime: nodejs-lambda:14
-      - name: menu
-        runtime: nodejs-lambda:14
-      - name: assemble
-        runtime: nodejs-lambda:14

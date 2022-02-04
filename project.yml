@@ -3,19 +3,27 @@ packages:
     actions:
       - name: pintools
         runtime: nodejs-lambda:14
+        main: handler
       - name: hello
         runtime: nodejs-lambda:14
+        main: handler
       - name: research
         runtime: nodejs-lambda:14
+        main: handler
       - name: boe
         runtime: nodejs-lambda:14
+        main: handler
       - name: publications
         runtime: nodejs-lambda:14
+        main: handler
       - name: openwhisk
         runtime: nodejs-lambda:14
+        main: handler
       - name: patents
         runtime: nodejs-lambda:14
+        main: handler
       - name: software
         runtime: nodejs-lambda:14
+        main: handler
       - name: echo
         runtime: nodejs-lambda:14
